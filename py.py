@@ -21,11 +21,11 @@ class ServingInfo(TypedDict, total=False):
     serving_id: str
     serving_description: str
     serving_url: str
-    metric_serving_amount: Optional[Decimal]  # Changed to Optional as per docs
-    metric_serving_unit: Optional[Literal["g", "ml", "oz"]]  # Made Optional
-    number_of_units: Optional[Decimal]  # Made Optional
+    metric_serving_amount: Optional[Decimal]  
+    metric_serving_unit: Optional[Literal["g", "ml", "oz"]]  
+    number_of_units: Optional[Decimal]  
     measurement_description: str
-    is_default: Optional[int]  # Made Optional as it's Premier Exclusive
+    is_default: Optional[int]  
     calories: Optional[Decimal]
     carbohydrate: Optional[Decimal]
     protein: Optional[Decimal]
